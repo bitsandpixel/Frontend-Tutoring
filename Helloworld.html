@@ -1,46 +1,142 @@
-<!DOCTYPE html> <!--to tell the broswer this is a HTML5 Page-->
-<html lang="en"> <!--html is a root element of an HTML page --> <!--Opening Tag-->
+<!DOCTYPE html>
+<!--to tell the broswer this is a HTML5 Page-->
+<html lang="en">
+  <!--html is a root element of an HTML page -->
+  <!--Opening Tag-->
 
-<head><!--meta information of the HTML page-->
-    <meta>
-    <title>Hello World</title> <!--Defines the title of a web page-->
-
+  <head>
+    <!--meta information of the HTML page-->
+    <meta />
+    <title>Hello World</title>
+    <!--Defines the title of a web page-->
 
     <style>
-        img.business {
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-            float: left;
-            clear: left;
-        }
+      img.business {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        float: left;
+        clear: left;
+      }
+      .ul-ol-lists {
+        float: left;
+        clear: left;
+      }
 
-        img.Lighthouse {
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-            float: right;
-            clear: left
-        }
+      img.Lighthouse {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        float: right;
+        clear: left;
+      }
 
-        p.firstpara {
-            font-size: xx-large;
-        }
+      p.firstpara {
+        font-size: xx-large;
+      }
 
-        a.duolingo,
-        a.business {
-            float: left;
-            clear: left;
-        }
+      a {
+        /*can also use display:block*/
+        float: left;
+        clear: left;
+      }
+
+      img.img-logo {
+        width: 260px;
+        height: 85px;
+      }
+      .nav-ul {
+        display: flex;
+        line-height: inherit;
+      }
+      /* .nav-il {
+        display: inline;
+      } */
+      .main-header {
+        width: 100%;
+        height: 112px;
+      }
+      div.main-header-div {
+        display: flex;
+        line-height: inherit;
+        padding: 10px;
+        margin: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <p class="firstpara">This is the first program of this tutorial</p>
-    <a class="business" href="#" target="_blank">Same page</a>
-    <a class="duolingo" href="https://www.duolingo.com/" target="_blank">Open duolingo</a>
-    <img class="business" src="business.jpg">
-    <img class="Lighthouse" src="Lighthouse.JPG">
-</body>
-
-</html> <!--Closing Tag-->
+  <body>
+    <header class="main-header">
+      <section>
+        <div class="main-header-div">
+          <div>
+            <a
+              id="logo-anchor"
+              class="logo-anchor"
+              href="https://www.sootradhari.com"
+            >
+              <img
+                id="img-logo"
+                class="img-logo"
+                src="logo.png"
+                alt="sootradhari media logo"
+              />
+            </a>
+          </div>
+          <div>
+            <nav>
+              <ul class="nav-ul">
+                <li class="nav-il"><a href="#">Home</a></li>
+                <li class="nav-il"><a href="#">About</a></li>
+                <li class="nav-il"><a href="#">Portfolio</a></li>
+                <li class="nav-il"><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <a href="https:www.youtube.com">youtube</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p class="firstpara">This is the first program of this tutorial</p>
+        </div>
+      </section>
+      <section>
+        <a class="business" href="#" target="_blank">Same page</a>
+        <a class="duolingo" href="https://www.duolingo.com/" target="_blank"
+          >Open duolingo</a
+        >
+      </section>
+      <section>
+        <img class="business" src="business.jpg" />
+        <img class="Lighthouse" src="Lighthouse.JPG" />
+      </section>
+      <section class="ul-ol-lists">
+        <div>
+          <ul>
+            <!--Unordered List-->
+            <li>Soap</li>
+            <li>Scent</li>
+            <li>Paste</li>
+            <li>Comb</li>
+          </ul>
+        </div>
+        <div>
+          <ol>
+            <!--Ordered List-->
+            <li>Hyderabad</li>
+            <li>Bengaluru</li>
+            <li>Chennai</li>
+            <li>Mumbai</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+<!--Closing Tag-->
