@@ -28,9 +28,13 @@ a {
   clear: left;
 }
 
-img.img-logo {
+img.logo {
   width: 260px;
   height: 85px;
+}
+a.logo {
+  float: left;
+  clear: left;
 }
 .nav-ul {
   display: flex;
@@ -48,4 +52,28 @@ div.main-header-div {
   line-height: inherit;
   padding: 10px;
   margin: 10px;
+}
+li {
+  font-weight: bolder;
+}
+li.listcolor {
+  font-weight: lighter;
+}
+#mumbailistitem {
+  font-variant: small-caps;
+}
+p.paragraphcolor {
+  color: darkcyan;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+#paragraph_1 {
+  color: blue;
+}
+#paragraph_2 {
+  color: orange;
+}
+#paragraph_4 {
+  color: green;
 }
