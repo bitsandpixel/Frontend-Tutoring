@@ -77,3 +77,20 @@ p.paragraphcolor {
 #paragraph_4 {
   color: green;
 }
+.myButton {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  background-color: chartreuse;
+  border: none;
+  float: right;
+  clear: right;
+}
+.myPara {
+  float: right;
+  clear: right;
+}
+.myButton.clicked {
+  background-color: red;
+  color: #ffffff;
+}
